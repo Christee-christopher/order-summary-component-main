@@ -44,7 +44,7 @@
       height: 350px;
       display: flex;
       flex-direction: column;
-      padding: 10px 10px;
+      padding: 30px 10px;
       align-items: center;
       border-radius: 2px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -58,35 +58,62 @@
     .you {
       color: rgba(0, 0, 0, 0.575);
       font-size: 16px;
-      text-align: center ;
-    }
-    .plan {
-      background-color:   hsl(225, 100%, 94%);
-      margin: 20px;
-      padding: 25px;
-    display: flex;
-    gap:30px;
-    border-radius: 20px;
-    text-align: center;
-
-    }
-    .change{
-      color: blue;
-      gap: 20px;
       text-align: center;
     }
-.proceed{
-  background-color:rgba(35, 35, 223, 0.87);
-  color: white;
-  padding: 15px;
-  border-radius: 20px;
-  font-size: 16px;
-}
-.cancel{
-  padding: 10px;
-  color: rgba(0, 0, 0, 0.685);
-  
-}
+
+    .icon-plan {
+      display: flex;
+    }
+
+    .plan {
+      background-color: hsl(225, 100%, 98%);
+      margin: 20px 0;
+      padding: 10px 20px;
+      width: 100%;
+      display: flex;
+      border-radius: 20px;
+      justify-content: space-between;
+    }
+
+    .icon-plan {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .value {
+      color: rgba(0, 0, 0, 0.575);
+    }
+
+    .change {
+      color: hsl(245, 75%, 52%);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .proceed {
+      background-color: hsl(245, 75%, 52%);
+      width: 100%;
+      color: white;
+      padding: 15px;
+      border-radius: 20px;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .cancel {
+      margin: 10px;
+      color: rgba(0, 0, 0, 0.575);
+      padding: 5px;
+      border-radius: 5px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -109,19 +136,24 @@
       <div class="write-up">
         <h4 class="order"> Order Summary</h4>
 
-        <p class="you">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+        <p class="you">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you
+          like!</p>
 
         <div class="plan">
-          <img src="./images/icon-music.svg" alt="">
-          <p class="annual">Annual Plan
-            $59.99/year</p>
-          <p class="change">Change</p>
-         
+          <div class="icon-plan">
+            <img src="./images/icon-music.svg" alt="" class="music-icon">
+            <div class="plan-price">
+              <h5 class="annual">Annual Plan </h5>
+              <small class="value"> $59.99/year</small>
+            </div>
+          </div>
+          <h5 class="change">Change</h5>
+
         </div>
 
         <div class="proceed">Proceed to Payment</div>
 
-        <p class="cancel">Cancel Order</p>
+        <button class="cancel">Cancel Order</button>
       </div>
 
       <div class="attribution">
