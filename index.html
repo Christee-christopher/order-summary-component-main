@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background: url(./images/pattern-background-desktop.svg) no-repeat;
+      background-color: rgba(135, 206, 250, 0.664);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+    }
+
+    .box-in-tainer {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .header {
+      height: 210px;
+      background: url(./images/illustration-hero.svg) center;
+    }
+
+    .write-up {
+      background-color: white;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px;
+      align-items: center;
+      border-radius: 2px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .order {
+      padding: 10px;
+      font-size: 1.5rem;
+    }
+
+    .you {
+      color: rgba(0, 0, 0, 0.575);
+      font-size: 16px;
+      text-align: center ;
+    }
+    .plan {
+      background-color:   hsl(225, 100%, 94%);
+      margin: 20px;
+      padding: 25px;
+    display: flex;
+    gap:30px;
+    border-radius: 20px;
+    text-align: center;
+
+    }
+    .change{
+      color: blue;
+      gap: 20px;
+      text-align: center;
+    }
+.proceed{
+  background-color:rgba(35, 35, 223, 0.87);
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.cancel{
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.685);
+  
+}
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsla(228, 45%, 44%, 0.795);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <section class="box-in-tainer">
+      <div class="header">
+
+      </div>
+
+      <div class="write-up">
+        <h4 class="order"> Order Summary</h4>
+
+        <p class="you">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+        <div class="plan">
+          <img src="./images/icon-music.svg" alt="">
+          <p class="annual">Annual Plan
+            $59.99/year</p>
+          <p class="change">Change</p>
+         
+        </div>
+
+        <div class="proceed">Proceed to Payment</div>
+
+        <p class="cancel">Cancel Order</p>
+      </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://github.com/cleverakanimoh" target="_blank">Clever Akanimoh</a>.
+        Coded by <a href="">Christee</a>.
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
